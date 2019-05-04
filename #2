@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std; 
+
+int main()
+{
+  string in_name ;
+  long in_readingsPrev, in_readingsPres, in_unpaidBal;
+  float totalBill = 0.0, readings = 0.0, unpaidBal = 0.0;
+  cout << "Enter Customer's Fullname: ";
+  getline (cin, in_name);
+  cout << "Enter Previous Reading: ";
+  cin >> in_readingsPrev;
+  cout << "Enter Present Reading: ";
+  cin >> in_readingsPres;
+  cout << "Enter any unpaid balance: ";
+  cin >> in_unpaidBal;
+  
+  readings = in_readingsPres - in_readingsPrev;
+  unpaidBal = in_unpaidBal;
+  totalBill = 35.0 + (readings * 1.1);
+  if(unpaidBal > 0)
+  totalBill += unpaidBal + 20;
+  
+
+  cout << "ACCOUNT NAME: " << in_name << endl;
+  cout << "PRESENT READING: " << in_readingsPres << endl;
+  cout << "PREVIOUS READING: " << in_readingsPrev << endl;
+  cout << "CONSUMPTION(m/gal): " << readings << endl;
+
+  cout << "BASIC CHARGE: " << (readings * 1.1) << endl;
+  cout << "DEMAND CHARGE: " << 35.0 << endl;
+  cout << "UNPAID BALANCE: " << in_unpaidBal << endl;
+  if(unpaidBal > 0)
+  cout << "UNPAID BALANCE CHARGE: " << 20 << endl;
+  cout << "\nTOTAL AMOUNT DUE: P" << totalBill << endl;
+}
