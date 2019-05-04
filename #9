@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int rows, columns;
+    string box;
+    cout << "How many rows: " <<endl;
+	cin >> rows;
+    
+    cout << "How many columns: " << endl; 
+    cin >> columns;
+    
+        for(int i = 0; i < rows; i++ ){
+            for(int x = 0; x < columns; x++){
+        
+                cout << "*";
+            
+            }
+            cout << endl;
+        }
+ 
+   return 0;
+}
