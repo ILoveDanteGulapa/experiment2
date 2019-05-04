@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	float V, y;
+	float z = 2.5;
+	int x;
+	
+	cout<<" The value of x: "; cin >>x;
+	cout<<" The value of y: "; cin>>y;
+	
+	switch(x){
+	
+ 	case 1:
+ 		
+ 		if(y > 1 && y >= 5)
+ 			V = x*y*z;
+ 	
+		 if (y>= 5)
+		V = x + (y/z);
+	
+ 		
+ 	case 2:
+ 		if (y <= 5){
+ 			V= fabs ((x-y)/z);
+		 }
+		 break;
+		 default:
+		 	V = x+y+z;
+}
+		 	
+ 
+ 	cout<< fixed << setprecision(2);
+ 	cout<< setw(10)<<setfill('_')<<V;
+ 	
+ 	return 0;
+}
