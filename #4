@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
+
+int main()
+{
+  long f, s, t;
+  
+  cout << "Enter first number: " << endl;
+  cin >> f;
+  
+  cout << "Enter second number: " << endl;
+  cin >> s;
+  
+  cout << "Enter third number: " << endl;
+  cin >> t;
+  
+
+  if(f >= s && f >= t){
+   cout << "The largest number is: " << f << endl;
+  }
+   if(s >= f && s >= t){
+   cout << "The largest number is: " << s << endl;
+  }
+  if(t >= f && t >= s){
+    cout << "The largest number is: " << t << endl;  
+  }
+  return 0;
+}
