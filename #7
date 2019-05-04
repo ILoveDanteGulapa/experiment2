@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int VarA, TotalSummation;
+  cout << "Enter a number: ";  cin>> VarA;
+  
+  while(VarA > 0){
+  TotalSummation = 0;
+  
+  for(int a = 1; a <= VarA; a++){
+    TotalSummation += a;
+   
+  }
+  cout<<"TotalSummation from 1 to "<<VarA<<" is " <<TotalSummation<<endl;
+  cout<< "Enter a number: "; cin>>VarA;
+}
+  cout << "Thank you!";
+  return 0;
+}
